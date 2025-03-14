@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f8f9fa;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------------header section end----------- */
+
+header {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 1000;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #65aef2;
+}
+
+nav a.active{
+    color: #65aef2;
+}
+
+.hotel-logo {
+    height: 40px;
+}
+
+/* -------------header section end----------- */
+
+/* ---------Discover section start--------- */
+
+
+.discover {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url('images/Image.png') no-repeat center center/cover;
+    padding-bottom: 6rem;
+    margin-bottom: 3rem;
+}
+
+.discover-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.image-scroll{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.image-scroll span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.image-scroll .active{
+    background-color: #65aef2;
+}
+
+/* ---------Discover section end--------- */
+
+/* ----------book section start---------  */
+
+.book{
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background-color: #e9f3f6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-header{
+    text-align: center;
+}
+
+.book-header h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.book-header p{
+    color: #5d5d5d;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.book-from{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.from-card input{
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.from-card input::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.book-btn{
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #65aef2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover{
+    background-color: #45a3ec;
+}
+
+/* ----------book section end---------  */
+
+/* --------rooms section start--------- */
+
+.rooms{
+    background-color: #f3f3f3;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.rooms-grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+   
+}
+
+.item-1{
+    grid-row: 1 / span 2;
+}
+
+.rooms-contet{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.rooms-contet:hover{
+    transform: translateY(-5px);
+}
+
+.item-1 p{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    max-width: 300px;
+    text-align: center;
+}
+
+.rooms-content img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.rooms-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.rooms-content:hover{
+    transform: translateY(-5px);
+}
+
+.rooms-content p{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+/* --------rooms section end--------- */
+
+/* ---------offers section start--------- */
+
+.offers{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.offers-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offers-text h3{
+    font-size: 1.5rem;
+    color: #65aef2;
+    margin-bottom: 1rem;
+}
+
+.offers-text h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.offers-text p{
+    color: #4f4f4f;
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+
+}
+
+.offers-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-view a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #65aef2;
+}
+
+.offers-grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.offers-card{
+    background-color: rgba(255,255, 255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3;
+    box-shadow: 0px 0px 10px rgba(132, 126, 126, 0.5);
+    transition: transform 0.3s;
+}
+
+.offers-card:hover{
+    transform: translateY(-5px);
+}
+
+.offers-item{
+    padding: 20px;
+}
+
+.offers-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ofers-title{
+    padding: 0 30px;
+}
+
+.ofers-title p{
+    color: #8f8f8f;
+    margin-bottom: 1rem;
+}
+
+.usur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usur h3{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.price3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.night{
+    color: #565656;
+    font-size: 0.9rem;
+}
+
+/* ---------offers section end--------- */
+
+/* --------footer section start--------- */
+
+footer{
+    margin-top: 10rem;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.newsletter h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    
+
+}
+
+.subscribe{
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    display: flex;
+    height: 50px;
+    border-radius: 8px;
+    border-radius:12px;
+    z-index: 4;
+}
+
+.subscribe input{
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    z-index: 3;
+}
+
+.subscribe input::placeholder{
+    color: #d9d9d9;
+    font-size: 1.3rem;
+}
+
+.subscribe button{
+    padding: 1rem 1rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0px 12px 12px 0px; 
+    border: none;
+    background-color: #65aef2;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover{
+    background-color: #3da0ec;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.links a{
+    display: block;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.links a:hover{
+    color: #ddd8d8;
+}
+
+.footer-copyright{
+    text-align: center;
+    border-top: 1px solid #8f8f8f;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-copyright p{
+    margin-top: 1rem;
+}
+
+
+/* --------footer section end--------- */
+
+
+
+/* ----------responsive design start---------- */
+
+@media (max-width:480px) {
+    
+    header{
+        top: 0rem;
+        border-radius: 0;
+        width: 100%;
+        padding: 1rem 0.3rem;
+        overflow: auto;
+    }
+    
+    nav{
+        overflow: hidden;
+        gap: 0.5rem;
+    }
+
+    .book{
+        width: 95%;
+        padding: 4rem 1rem;
+    }
+
+    .book-from{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .rooms-grid{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .rooms-contet{
+        margin-left: -10px;
+    }
+
+    .rooms-content{
+        margin-left: -30px;
+    }
+
+    .offers{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .offers-view a{
+        font-size: 1rem;
+    }
+
+    .offers-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        padding: 4rem 1rem;
+    }
+
+    .footer-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+
+    .subscribe{
+        width: 90%;
+    }
+
+    .footer-links{
+        gap: 1rem;
+    }
+
+    .links-grid{
+        gap: 1rem;
+    }
+
+    .footer-copyright{
+    width: 90%;
+        
+    }
+
+
+}
+
+
+
+
+
